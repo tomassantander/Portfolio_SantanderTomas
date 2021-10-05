@@ -133,15 +133,13 @@ body{
     align-items: center;
     justify-content: center;
     /*padding-left: 3em;*/
-    width: 50%;
 }
 
 .text{
     display: flex;
     align-items: center;
     flex-direction: row;
-    padding-left: 3em;
-    padding: 2em;
+    padding: 4em;
     border-top: solid rgb(60, 60, 60);
     justify-content: center;
 }
@@ -157,12 +155,12 @@ body{
 }
 
 .slider li img{
-    width: 50%;
+    width: 75%;
     border-radius: 10px;
 }
 
 .caption{
-    width: 50%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,7 +175,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    
+    margin-left:40%;
+    margin-right: 40%;
 }
 
 .pagination li{
@@ -186,8 +185,12 @@ body{
     align-items: center;
 }
 
+.pagination span:hover{
+    cursor: pointer;
+    color: white
+}
+
 .lenguajes{
-   
     display: flex;
     flex-direction: column;
    /* border-right: solid rgb(60, 60, 60);*/
