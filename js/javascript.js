@@ -17,7 +17,7 @@ $(document).ready(function(){
     var paginationPos = $(this).index()+1;
 
     $('.slider li').hide();
-    $('.slider li:nth-child('+paginationPos+')').fadeIn(1500);
+    $('.slider li:nth-child('+paginationPos+')').fadeIn(1000);
     $('.pagination li').css({'color':'#606060'})
     $(this).css({'color':'white'});
   }

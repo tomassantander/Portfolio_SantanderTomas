@@ -39,6 +39,8 @@ body{
     height: 14%;
     border-style: solid;
     border-color: rgb(60, 60, 60);
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
 }
 .sidebar .logo{
    width: 10%;
@@ -67,17 +69,19 @@ body{
     padding: 20px;
     color: black;
     text-decoration: none;
-    font-size: 30PX;
+    font-size: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 .sidebar a:hover{
     text-decoration: none;
     color: white;
-    font-size: 35px;
+    font-size: 30px;
     transition: 0.3s;
+    border-radius: 15%;
 }
 
 .logo img{
@@ -104,6 +108,9 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 2em;
+    box-shadow: 0 0 10px black;
+    margin: 2em;
+    border-radius: 10px;
 }
 
 .estudios{
@@ -111,20 +118,31 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em;
+    padding: 4em;
+    box-shadow: 0 0 10px black;
+    margin: 2em;
+    border-radius: 10px;
+  
 }
 
 .relleno{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 2em;
+    box-shadow: 0 0 10px black;
+    border-top: solid rgb(60, 60, 60);
+    margin: 2em;
+    border-radius: 10px;
 }
 
 .proyectOne{
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 10px black;
+    padding: 2em;
+    border-radius: 10px;
 }
 
 .text p , h1{
@@ -136,12 +154,12 @@ body{
 }
 
 .text{
+    padding-top: 2em;
     display: flex;
     align-items: center;
     flex-direction: row;
-    padding: 4em;
-    border-top: solid rgb(60, 60, 60);
     justify-content: center;
+
 }
 .slider ul{
     list-style: none;
