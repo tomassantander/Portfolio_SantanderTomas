@@ -140,11 +140,24 @@ body{
 .proyectOne{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     box-shadow: 0 0 10px black;
     padding: 2em;
+    width: 50%;
+    height: 800px;
     border-radius: 10px;
 }
 
+.proyectTwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 0 10px black;
+    padding: 2em;
+    width: 50%;
+    height: 800px;
+    border-radius: 10px;
+}
 .text p , h1{
     display: flex;
     flex-direction: column;
@@ -177,6 +190,9 @@ body{
     border-radius: 10px;
 }
 
+.slider{
+    justify-content: space-around;
+}
 .caption{
     width: 75%;
     display: flex;

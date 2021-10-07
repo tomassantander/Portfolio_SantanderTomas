@@ -1,24 +1,48 @@
 $(document).ready(function(){
  
-  var imgItems = $('.slider li').length; //esta variable nos dice la cantidad de imagenes que tiene el slider
+  var imgItems = $('.proyectOne .slider li').length; //esta variable nos dice la cantidad de imagenes que tiene el slider
   for(i = 1; i <= imgItems; i++){
-    $('.pagination').append('<li> <span class="fa fa-circle"></span></li>'); //agregamos un icono ciruclo para cada foto
+    $('.proyectOne .pagination').append('<li> <span class="fa fa-circle"></span></li>'); //agregamos un icono ciruclo para cada foto
   }
   
 
-  $('.slider li').hide(); //ocultamos las fotos del slider
-  $('.slider li:first').show(); //solo mostramos la primera de la lista
+  $('.proyectOne .slider li').hide(); //ocultamos las fotos del slider
+  $('.proyectOne .slider  li:first').show(); //solo mostramos la primera de la lista
 
-  $('.pagination li:first').css({'color':'white'}) //señalamos el primer circulo haciendo referencia a la primera foto
+  $('.proyectOne .pagination li:first').css({'color':'white'}) //señalamos el primer circulo haciendo referencia a la primera foto
 
-  $('.pagination li').click(pagination);
+  $('.proyectOne .pagination li').click(pagination);
 
   function pagination(){
     var paginationPos = $(this).index()+1;
 
-    $('.slider li').hide();
-    $('.slider li:nth-child('+paginationPos+')').fadeIn(1000);
-    $('.pagination li').css({'color':'#606060'})
+    $('.proyectOne .slider li').hide();
+    $('.proyectOne .slider li:nth-child('+paginationPos+')').fadeIn(1000);
+
+    $('.proyectOne .pagination li').css({'color':'#606060'})
+    $(this).css({'color':'white'});
+  }
+
+  var imgItems2 = $('.proyectTwo .slider li').length; //esta variable nos dice la cantidad de imagenes que tiene el slider
+  for(i = 1; i <= imgItems2; i++){
+    $('.proyectTwo .pagination').append('<li> <span class="fa fa-circle"></span></li>'); //agregamos un icono ciruclo para cada foto
+  }
+  
+
+  $('.proyectTwo .slider li').hide(); //ocultamos las fotos del slider
+  $('.proyectTwo .slider  li:first').show(); //solo mostramos la primera de la lista
+
+  $('.proyectTwo .pagination li:first').css({'color':'white'}) //señalamos el primer circulo haciendo referencia a la primera foto
+
+  $('.proyectTwo .pagination li').click(pagination2);
+
+  function pagination2(){
+    var paginationPos2 = $(this).index()+1;
+
+    $('.proyectTwo .slider li').hide();
+    $('.proyectTwo .slider li:nth-child('+paginationPos2+')').fadeIn(1000);
+
+    $('.proyectTwo .pagination li').css({'color':'#606060'})
     $(this).css({'color':'white'});
   }
 
