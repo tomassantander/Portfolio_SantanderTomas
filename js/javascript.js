@@ -9,7 +9,7 @@ $(document).ready(function(){
   $('.proyectOne .slider li').hide(); //ocultamos las fotos del slider
   $('.proyectOne .slider  li:first').show(); //solo mostramos la primera de la lista
 
-  $('.proyectOne .pagination li:first').css({'color':'white'}) //señalamos el primer circulo haciendo referencia a la primera foto
+  $('.proyectOne .pagination li:first').css({'color':'#c9ada7'}) //señalamos el primer circulo haciendo referencia a la primera foto
 
   $('.proyectOne .pagination li').click(pagination);
 
@@ -19,8 +19,8 @@ $(document).ready(function(){
     $('.proyectOne .slider li').hide();
     $('.proyectOne .slider li:nth-child('+paginationPos+')').fadeIn(1000);
 
-    $('.proyectOne .pagination li').css({'color':'#606060'})
-    $(this).css({'color':'white'});
+    $('.proyectOne .pagination li').css({'color':'white'})
+    $(this).css({'color':'#c9ada7'});
   }
 
   var imgItems2 = $('.proyectTwo .slider li').length; //esta variable nos dice la cantidad de imagenes que tiene el slider
@@ -32,7 +32,7 @@ $(document).ready(function(){
   $('.proyectTwo .slider li').hide(); //ocultamos las fotos del slider
   $('.proyectTwo .slider  li:first').show(); //solo mostramos la primera de la lista
 
-  $('.proyectTwo .pagination li:first').css({'color':'white'}) //señalamos el primer circulo haciendo referencia a la primera foto
+  $('.proyectTwo .pagination li:first').css({'color':'#c9ada7'}) //señalamos el primer circulo haciendo referencia a la primera foto
 
   $('.proyectTwo .pagination li').click(pagination2);
 
@@ -42,8 +42,8 @@ $(document).ready(function(){
     $('.proyectTwo .slider li').hide();
     $('.proyectTwo .slider li:nth-child('+paginationPos2+')').fadeIn(1000);
 
-    $('.proyectTwo .pagination li').css({'color':'#606060'})
-    $(this).css({'color':'white'});
+    $('.proyectTwo .pagination li').css({'color':'white'})
+    $(this).css({'color':'#c9ada7'});
   }
 
  });
