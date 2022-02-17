@@ -307,7 +307,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 150px;
-    background-color: rgb(34, 34, 59)
+    background-color: rgb(34, 34, 59);
     border-radius: 10px;
     font-size: 1.2em;
 }
