@@ -20,23 +20,23 @@ body{
     display: flex;
     background-color: rgb(34, 34, 59) ;
     color: rgb(242, 233, 228);
-    font-size: 14px;
+    font-size: 15px;
     /*border-radius: 10px;*/
     justify-content: space-around;
     padding-bottom: 3em;
 }
 
 .sidebar{
-    position: fixed;
+    position:absolute;
     color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     border-radius: 10px;
-    width: 90%;
+    width: 95%;
     padding-top: 1em;
     padding: 1em;
-    height: 14%;
+    height: 15%;
     border-style: solid;
     background-color: rgb(74, 78, 105);
     box-shadow: 0 0 10px black;
@@ -105,21 +105,38 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 2em;
-    box-shadow: 0 0 10px black;
+    /*box-shadow: 0 0 10px black;*/
     margin: 2em;
     border-radius: 10px;
+}
+
+.presentacion p{
+    padding-top: 2em; 
+    text-align: center;
+}
+.estudios_content{
+    padding-top: 2em;
+}
+.skills_content{
+    padding-top: 2em; 
 }
 
 .estudios{
     border-top: solid rgb(60, 60, 60);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     padding: 4em;
-    box-shadow: 0 0 10px black;
+   /* box-shadow: 0 0 10px black;*/
     margin: 2em;
     border-radius: 10px;
   
+}
+
+.ls_skills{
+    display: flex;
+    flex-direction: row;
 }
 
 .relleno{
@@ -128,7 +145,7 @@ body{
     align-items: center;
     justify-content: space-around;
     padding: 2em;
-    box-shadow: 0 0 10px black;
+    /*box-shadow: 0 0 10px black;*/
     border-top: solid rgb(60, 60, 60);
     margin: 2em;
     border-radius: 10px;
@@ -140,37 +157,46 @@ body{
     justify-content: space-around;
     box-shadow: 0 0 10px black;
     padding: 2em;
-    width: 50%;
-    height: 800px;
+    width: 80%;
+
     border-radius: 10px;
 }
 
 .proyectTwo{
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     box-shadow: 0 0 10px black;
     padding: 2em;
-    width: 50%;
-    height: 800px;
+    width: 80%;
+
     border-radius: 10px;
 }
-.text p , h1{
+.text p , h1,a{
+    color: rgb(242, 233, 228);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    text-decoration: none;
     /*padding-left: 3em;*/
 }
 
 .text{
-    padding-top: 2em;
+
+    padding: 2em;
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 
+}
+.text h1:hover , a:hover{
+    transition: 0.3s;
+    text-decoration: none;
+    color: rgb(201, 173, 167);
+    font-size: 20px;
 }
 .slider ul{
     list-style: none;
@@ -308,4 +334,7 @@ body{
 .pieDePagina a{
     color: black;
     text-decoration: none;
+    padding: 1.5em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
 }

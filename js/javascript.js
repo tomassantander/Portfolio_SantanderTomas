@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+
  
   var imgItems = $('.proyectOne .slider li').length; //esta variable nos dice la cantidad de imagenes que tiene el slider
   for(i = 1; i <= imgItems; i++){
